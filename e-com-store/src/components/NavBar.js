@@ -8,15 +8,37 @@ const ButtonContainer = styled.button`
 	font-size: 1.4rem;
 	background: transparent;
 	border: 0.05rem solid var(--mainWhite);
-	color: var(--mainYellow);
+	color: var(--mainWhite);
 	border-radius: 0.5rem;
+	padding: 0.2rem 0.5rem;
+	cursor: pointer;
+	margin: 0.2rem 0.5rem 0;
+	transition: all 0.5s easie-in-out;
+	&:hover {
+		background: var(--lightYellow);
+	}
+	&:focus {
+		outline: none;
+	}
+`;
+
+const NavWrapper = styled.nav`
+	background-color: var(--navDark);
+	.nav-link {
+		color: var(--mainWhite) !important;
+		font-size: 1.3rem;
+		text-transform: capitalize !important;
+		&:hover {
+			color: var(--mainYellow) !important;
+		}
+	}
 `;
 
 export default class NavBar extends Component {
 	render() {
 		return (
 			<div>
-				<nav className="navbar navbar-expand-sm  navbar-dark px-sm-5" style={{ backgroundColor: '#252728' }}>
+				<NavWrapper className="navbar navbar-expand-sm  navbar-dark px-sm-5">
 					{/* 
 				https://www.iconfinder.com/icons/1243689/call_phone_icon
 				Creative Commons (Attribution 3.0 Unported);
@@ -38,7 +60,7 @@ export default class NavBar extends Component {
 							My Cart
 						</ButtonContainer>
 					</Link>
-				</nav>
+				</NavWrapper>
 			</div>
 		);
 	}
