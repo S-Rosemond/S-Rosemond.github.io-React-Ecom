@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Product from './Product';
 import Title from './Title';
-import { ProductConsumer } from '../app/context';
+import { ProductConsumer } from '../Context/context';
 
 export default class ProductList extends Component {
 	render() {

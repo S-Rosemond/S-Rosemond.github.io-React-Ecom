@@ -1,41 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo/logo.svg';
-import styled from 'styled-components';
-
-const ButtonContainer = styled.button`
-	text-transform: capitalize;
-	font-size: 1.4rem;
-	background: transparent;
-	border: 0.05rem solid var(--mainWhite);
-	color: var(--mainWhite);
-	border-radius: 0.5rem;
-	padding: 0.2rem 0.5rem;
-	cursor: pointer;
-	margin: 0.2rem 0.5rem 0;
-	transition: all 0.5s easie-in-out;
-	&:hover {
-		background: var(--lightYellow);
-	}
-	&:focus {
-		outline: none;
-	}
-`;
-
-const NavWrapper = styled.nav`
-	background-color: var(--navDark);
-
-	.nav-link {
-		color: var(--mainWhite) !important;
-		font-size: 1.3rem;
-		font-family: Amiri !important;
-
-		text-transform: capitalize !important;
-		&:hover {
-			color: var(--mainYellow) !important;
-		}
-	}
-`;
+import { ButtonContainer } from './Button';
+import { NavWrapper } from './NavWrapper';
 
 export default class NavBar extends Component {
 	render() {

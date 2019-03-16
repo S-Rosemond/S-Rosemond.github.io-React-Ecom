@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css/normalize.css';
+import { ProductProvider } from './Context/context';
 import App from './app/App';
-import { ProductProvider } from './app/context';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import * as serviceWorker from './serviceworker/serviceWorker';
