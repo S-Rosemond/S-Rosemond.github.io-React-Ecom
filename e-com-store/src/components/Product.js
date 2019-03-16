@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../app/context';
+import PropTypes from 'prop-types';
 
 export default class Product extends Component {
 	render() {
@@ -35,3 +35,14 @@ export default class Product extends Component {
 		);
 	}
 }
+// PropTypes = new; name of class.propTypes: lowercase(p) + camel; then .shape() = inside = obj {}. { props: PropType.type} : uppercase(P)
+//Then .isRequired = force required; console = failed prop;
+Product.propTypes = {
+	product: PropTypes.shape({
+		id: PropTypes.number,
+		img: PropTypes.string,
+		title: PropTypes.string,
+		price: PropTypes.number,
+		inCart: PropTypes.bool
+	}).isRequired
+};

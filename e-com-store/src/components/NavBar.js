@@ -24,10 +24,12 @@ const ButtonContainer = styled.button`
 
 const NavWrapper = styled.nav`
 	background-color: var(--navDark);
+
 	.nav-link {
 		color: var(--mainWhite) !important;
 		font-size: 1.3rem;
-		padding: 0 0.6rem;
+		font-family: Amiri !important;
+
 		text-transform: capitalize !important;
 		&:hover {
 			color: var(--mainYellow) !important;
@@ -45,12 +47,12 @@ export default class NavBar extends Component {
 				Creative Commons (Attribution 3.0 Unported);
 				https://www.iconfinder.com/Makoto_msk */}
 					<Link to="/">
-						<img src={Logo} alt="Navigation bar brand telephone icon" />
+						<img src={Logo} alt="Home Page" className="navbar-brand" />
 					</Link>
 					<ul className="navbar-nav align-items-center">
 						<li className="nav-item ml-5" />
 						<Link to="/" className="nav-link">
-							Products
+							Le Monde Matrice
 						</Link>
 					</ul>
 					<Link to="/cart" className="ml-auto">
