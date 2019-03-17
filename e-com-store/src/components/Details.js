@@ -22,7 +22,7 @@ export default class Details extends Component {
 								</div>
 								<div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
 									<h2>model: {title}</h2>
-									<h4 className="text-title text-uppercase text-muted mt-3 mb-2">
+									<h4 className="text-title text-uppercase text-muted mt-3 mb-2 ">
 										made by: <span className="text-uppercas3">{company}</span>
 									</h4>
 									<h4>
@@ -34,7 +34,7 @@ export default class Details extends Component {
 									<p className="text-capitalize font-weight-bold mt-3 mb-0">
 										Some info about the product:
 									</p>
-									<p className="text-muted lead">{info}</p>
+									<p className="text-muted lead alert alert-secondary">{info}</p>
 									<div>
 										<Link to="/">
 											<ButtonContainer bg={'#ff6100'}>back to Products</ButtonContainer>

@@ -7,9 +7,9 @@ export const ButtonContainer = styled.button`
 	border: 0.05rem solid var(--mainWhite);
 	color: var(--mainWhite);
 	border-radius: 0.5rem;
-	padding: 0.2rem 0.5rem;
+	padding: 0.2rem 1rem;
 	cursor: pointer;
-	margin: 0.2rem 0.5rem 0;
+	margin: 0.2rem 0.5rem 0.5rem 0.6rem;
 	transition: all 0.5s easie-in-out;
 	&:hover {
 		color: ${props => (props.bg ? props.bg : 'white')};
