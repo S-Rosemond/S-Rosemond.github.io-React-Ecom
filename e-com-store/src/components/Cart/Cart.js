@@ -3,6 +3,7 @@ import { ProductConsumer } from '../../Context/context.js';
 import Title from '../Title';
 import CartColumns from './CartColumns';
 import EmptyCart from './EmptyCart';
+import CartList from './CartList';
 
 export default class Cart extends Component {
 	render() {
@@ -16,6 +17,7 @@ export default class Cart extends Component {
 								<React.Fragment>
 									<Title name="your" title="cart items" />
 									<CartColumns />
+									<CartList value={value} />
 								</React.Fragment>
 							);
 						} else {
